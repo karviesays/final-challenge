@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height:1.5;
+}
+
+section {
+    padding: 4em 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.logo, .nav__link, .footer__nav__link{
+    color: #fff; 
+}
+
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn__accent{
+    background-color: #A59678;
+    color: #fff;
+    border-radius: 100px;
+    padding: .25rem .95rem;
+}
+
+.accent{
+    color: #A59678;
+}
+
+.bg__dark {
+    background-color: #3B4050;
+    color: #fff;
+}
+
+/* Header */
+
+header {
+    background-color: #2E323F;
+    color: #fff;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav__list {
+    font-size: 1.125rem;
+}
+
+.nav__link {
+    text-transform: uppercase;
+}
+
+.nav__list + .nav__list {
+    padding: 1em 0;
+}
+
+.nav__item + .nav__item {
+    margin: .5em 0;
+}
+
+
+.btn__accent:hover, .btn__accent:active {
+    opacity: .85;
+}
+
+/* Intro */
+.intro {
+    background-color:#384050;
+    color: #fff;
+}
+
+.intro__title {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.intro__btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+/* Features */
+.features {
+    background-color: #e6e6e7;
+}
+
+/* Blog */
+.three__col {
+    margin-top: 4em;
+}
+
+.col__blog {
+    text-align: center;
+    padding: 2em;
+}
+
+.col__blog + .col__blog {
+    margin: 2em 0;
+}
+
+.blog__img {
+    background: url('img/the-image.jpg')no-repeat center center/cover;
+    min-height: 15rem;
+}
+/* Footer */
+
+footer {
+    background-color: #2E323F;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+footer h2 {
+    padding-bottom: .5em;
+}
+
+.footer__title {
+    font-size: 2rem;
+}
+
+.footer__nav__item + .footer__nav__item {
+    margin: 1em 0;
+}
+
+@media (min-width: 1000px) {
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Navigation */
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .nav__list  {
+        display: flex;
+    }
+    
+    .nav__list + .nav__list {
+        margin-left: 2em;
+    }
+
+    .nav__item + .nav__item {
+        margin: 0;
+        padding-left: 2em;
+    }
+    
+
+    /* Intro Section */
+
+    .intro__title {
+        font-size: 4rem;
+        line-height: 1;
+    }
+
+    .intro__content__right {
+        font-size: 1.5rem;
+        align-self: end;
+
+    }
+
+    /* Features */
+    .features__col {
+        text-align: center;
+    }
+
+    .features__col + .features__col {
+        margin: 0 0 0 4em;
+    }
+
+    /* Blog */
+    .blog__img {
+        min-height: 15rem;
+    }
+
+    /* Three col */
+    .three__col {
+        display: flex;
+    }
+
+    .col__blog {
+        padding: 1em;
+    }
+
+    .col__blog + .col__blog {
+        margin: 0 0 0 1em ;
+    }
+
+   
+}
+
+@media (min-width: 1200px){
+    /* Header */
+   .intro {
+       padding: 5em 0;
+   }
+
+   .intro__content__right {
+    font-size: 1.5rem;
+    align-self: end;
+}
+
+   .intro__title {
+       font-size: 6rem;
+   }
+
+   .intro__text, .intro__btn {
+       font-size:1.333rem;
+   }
+
+   /* Features */
+   .features__col {
+       text-align: center;
+   }
+
+   .features__col + .features__col {
+       margin:0 0 0 5em;
+   }
+   
+   /* blog */
+   .two__col {
+       display: flex;
+
+   }
+
+   .three__col {
+       display: flex;
+       flex-flow: column;
+   }
+
+   .col__blog + .col__blog {
+        margin:1em 0 0 0;
+    }
+
+    .blog__col + .blog__col {
+        margin-left: 5em;
+    } 
+    .blog__img {
+        width: 100%;
+        min-height: 30rem;
+    }
+
+    .four__col {
+        display: flex;
+        justify-content: space-between;
+    }
+   .footer__title {
+       text-align: center;
+       font-size: 3rem;
+       margin-bottom: 1em;
+   }
+    .footer__col {
+        width: 40%;
+    }
+}
